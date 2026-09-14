@@ -1,0 +1,22 @@
+_____________________________________________
+
+https://github.com/<your-GitHub-username>
+
+    1. Go to GitHub and click your profile picture (top right) -> Settings.
+    2. Scroll down the left menu and click Developer settings -> Personal access tokens -> Tokens (classic).
+    3. Click Generate new token (classic).
+    4. Set a Note (e.g., Ubuntu VM Runner).
+    5. Set Expiration to No expiration (or a duration of your choice).
+    6. Check the box next to repo (Full control of private repositories).
+    7. Click Generate token at the bottom.
+    8. Copy the token immediately (it starts with ghp_). You will not be able to see it again.
+
+<token>
+_____________________________________________
+
+In Ubuntu server:
+
+cd /var/www/essay_web
+
+git remote set-url origin https://<token>@github.com/<your-GitHub-username>/essay_web.git
+_____________________________________________

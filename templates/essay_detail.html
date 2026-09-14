@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="essay-detail">
+  <h2>{{ essay.title }}</h2>
+  <p class="meta">
+    {{ t('detail.created') }}: {{ essay.created_at.strftime('%Y-%m-%d %H:%M') if essay.created_at else '' }}
+  </p>
+  <pre>{{ essay.content }}</pre>
+  <a href="{{ url_for('essay_list') }}"><button type="button">{{ t('list.back') }}</button></a>
+</article>
+{% endblock %}

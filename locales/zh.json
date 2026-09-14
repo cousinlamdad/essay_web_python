@@ -1,0 +1,24 @@
+{
+  "app": {
+    "title": "文章網"
+  },
+  "nav": {
+    "input": "上傳",
+    "list": "列表"
+  },
+  "input": {
+    "title": "標題",
+    "content": "內容",
+    "submit": "上傳文章",
+    "saved": "文章已上傳！",
+    "error": "上傳失敗。"
+  },
+  "list": {
+    "loading": "載入中...",
+    "empty": "暫無作文。",
+    "back": "返回列表"
+  },
+  "detail": {
+    "created": "創建於"
+  }
+}

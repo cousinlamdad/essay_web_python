@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+  <h2>{{ t('nav.input') }}</h2>
+  <form method="post">
+    <div>
+      <label for="title">{{ t('input.title') }}</label>
+      <input id="title" name="title" type="text" required />
+    </div>
+    <div>
+      <label for="content">{{ t('input.content') }}</label>
+      <textarea id="content" name="content" rows="10"></textarea>
+    </div>
+    <button type="submit">{{ t('input.submit') }}</button>
+  </form>
+  {% if status %}<p class="status">{{ status }}</p>{% endif %}
+</section>
+{% endblock %}

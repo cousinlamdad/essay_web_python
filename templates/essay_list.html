@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+  <h2>{{ t('nav.list') }}</h2>
+  {% if not essays %}
+  <p>{{ t('list.empty') }}</p>
+  {% else %}
+  <ul class="essay-list">
+    {% for essay in essays %}
+    <li>
+      <a href="{{ url_for('essay_detail', essay_id=essay.id) }}">
+        <span class="title">{{ essay.title }}</span>
+        <time datetime="{{ essay.created_at.isoformat() if essay.created_at else '' }}">
+          {{ essay.created_at.strftime('%Y-%m-%d %H:%M') if essay.created_at else '' }}
+        </time>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endblock %}

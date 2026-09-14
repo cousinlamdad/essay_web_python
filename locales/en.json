@@ -1,0 +1,24 @@
+{
+  "app": {
+    "title": "Essay Web"
+  },
+  "nav": {
+    "input": "Upload",
+    "list": "List"
+  },
+  "input": {
+    "title": "Title",
+    "content": "Content",
+    "submit": "Upload Essay",
+    "saved": "Essay uploaded!",
+    "error": "Failed to upload essay."
+  },
+  "list": {
+    "loading": "Loading...",
+    "empty": "No essays yet.",
+    "back": "Back to list"
+  },
+  "detail": {
+    "created": "Created"
+  }
+}
