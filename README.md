@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS essays (
 Copy `.env.example` to `.env` and fill in your values:
 
 ```bash
-PORT=3001
+PORT=3012
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=essay_app
