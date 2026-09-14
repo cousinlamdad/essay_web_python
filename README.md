@@ -106,7 +106,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open: http://localhost:3001
+Then open: http://localhost:3012
 
 The app serves the rendered pages and the JSON API from the same port. It uses
 Waitress when installed, and falls back to the Flask development server otherwise.
